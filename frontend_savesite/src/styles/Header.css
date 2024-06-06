@@ -1,0 +1,71 @@
+/* src/styles/Header.css */
+@keyframes pendulum {
+   0% {
+     transform: rotate(0deg);
+   }
+   25% {
+     transform: rotate(12deg);
+   }
+   50% {
+     transform: rotate(0deg);
+   }
+   75% {
+     transform: rotate(-12deg);
+   }
+   100% {
+     transform: rotate(0deg);
+   }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 150px;
+}
+
+.logo img {
+  height: 80px; /* Adjust the height as needed */
+  width: auto; /* Maintain the aspect ratio */
+  transform-origin: top center; /* Set the fixed point at the top center */
+  animation: pendulum 8s infinite;
+}
+.logo {
+  display: inline-block;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold; /* Make the text thicker */
+  padding: 10px 20px; /* Add padding for button effect */
+  border: 2px solid #37e773; /* Add green border from the logo */
+  border-radius: 5px; /* Round the corners */
+  background-color: rgba(0, 0, 0, 0.5); /* Match the background color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.nav a:hover {
+  background-color: #10b981; /* Change background color on hover */
+  color: inherit; /* Change text color on hover */
+}
+
+.logo img {
+  height: 150px; /* Adjust the height as needed */
+  width: 150px; /* Adjust the width as needed */
+}

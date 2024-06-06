@@ -1,0 +1,38 @@
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    text-align: center;
+  }
+  
+  .bookmarks-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bookmarks-list li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bookmarks-list li a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .bookmarks-list li a:hover {
+    text-decoration: underline;
+  }

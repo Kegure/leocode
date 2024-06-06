@@ -1,0 +1,53 @@
+/* src/styles/MainContent.css */
+
+body {
+  background-image: url('../assets/backgroundMainContent.png');
+  background-size: cover; /* This ensures the image covers the entire page */
+  background-position: center; /* This centers the image */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  background-attachment: fixed; /* This makes the background image fixed when scrolling */
+  padding-top: 200px; /* Adjust padding to accommodate the header */
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.intro {
+  background-color: #f3f4f6; /* Light gray background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.intro h1 {
+  color: #1e3a8a; /* Navy blue color */
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #333; /* Dark gray color */
+}
+
+.features {
+  background-color: #e5e7eb; /* Slightly darker gray background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.features h2 {
+  color: #10b981; /* Green color from the logo */
+}
+
+.features ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.features li {
+  margin-bottom: 10px;
+  color: #333; /* Dark gray color */
+}
